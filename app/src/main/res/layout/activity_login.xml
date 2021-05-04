@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_wave__2_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/log_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/sign_up_t"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user" />
+
+    <EditText
+        android:id="@+id/log_ed_mail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ed_text_back"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_user_svg"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/ed_mail"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColorHighlight="@color/blue"
+        android:textColorLink="@color/blue"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_image" />
+
+    <EditText
+        android:id="@+id/log_ed_pas"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ed_text_back"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/ed_pas"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColorHighlight="@color/blue"
+        android:textColorLink="@color/blue"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/log_ed_mail"
+        app:layout_constraintTop_toBottomOf="@+id/log_ed_mail" />
+
+    <EditText
+        android:id="@+id/log_ed_username"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ed_text_back"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_username"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/ed_username"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColorHighlight="@color/blue"
+        android:textColorLink="@color/blue"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintEnd_toEndOf="@+id/log_ed_mail"
+        app:layout_constraintStart_toStartOf="@+id/log_ed_pas"
+        app:layout_constraintTop_toBottomOf="@+id/log_ed_pas" />
+
+    <Button
+        android:id="@+id/b_log"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickSign"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/log_ed_mail"
+        app:layout_constraintStart_toStartOf="@+id/log_ed_mail"
+        app:layout_constraintTop_toBottomOf="@+id/log_ed_username" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/log_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="161dp"
+        android:onClick="onClickImageSet"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorLink="@color/blue"
+        android:textCursorDrawable="@color/blue"
+        app:buttonTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/log_ed_mail"
+        app:layout_constraintTop_toTopOf="@+id/log_ed_pas" />
+
+    <TextView
+        android:id="@+id/log_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/reset_pas"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/b_log" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ShipChat</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегестрироваться</string>
+    <string name="sign_in_t">Уже есть аккаунт?
+        Заходи</string>
+    <string name="sign_up_t">Ещё нет аккаунта?
+        Создай, это просто</string>
+    <string name="ed_username">Введите свой никнейм</string>
+    <string name="ed_mail">Введите свою почту</string>
+    <string name="ed_pas">Введите свой пароль</string>
+    <string name="finger">Просканировать</string>
+    <string name="sign_out">Выйти с аккаунта</string>
+    <string name="sign_out_m">Вы действительно хотите выйти с аккаунта?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="chats">Чаты</string>
+    <string name="profile">Ты опять тут?</string>
+    <string name="users">Пользователи</string>
+    <string name="search">Хочешь найти пользователя?</string>
+    <string name="seen">Просмотрено</string>
+    <string name="ok">Понятно</string>
+    <string name="reset_pas">Забыли пароль?</string>
+    <string name="reset_pas_t">Восстановление пароля</string>
+    <string name="reset_pas_b">Отправить код</string>
+    <string name="info_t">О приложении</string>
+    <string name="info_m1">Создатель приложения: А.Шаповаленко или Шепеленко</string>
+    <string name="info_m2">Версия приложения: 1.2.0.1</string>
+    <string name="info_m3">Дата последнего обновления: 15.04.2021</string>
+    <string name="mes">Введите своё сообщение</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
